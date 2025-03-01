@@ -8,6 +8,7 @@ import {
 } from "@/components/ui/carousel";
 import Autoplay from "embla-carousel-autoplay";
 import Image from "next/image";
+import Link from "next/link";
 import Marquee from "react-fast-marquee";
 
 export default function Home() {
@@ -43,47 +44,47 @@ export default function Home() {
     {
       image: "https://www.patanjaliayurved.net/assets/product_images/400x400/1739512839YouvanGoldPlusTwoCaphomeimagenew.webp",
       title: "Yuvan Gold Plus",
+      slug: "yuvangoldplus",
       desc: "Pearl yellow colour vegi capsule with dark brown colour powder, characteristic odour and taste",
       price: 160
     },
     {
-      image: "https://www.patanjaliayurved.net/assets/product_images/400x400/1739512839YouvanGoldPlusTwoCaphomeimagenew.webp",
+      image: "https://www.patanjaliayurved.net/assets/product_images/400x400/1739513300Untitled-1.webp",
       title: "Yuvan Gold Plus",
+      slug: "yuvangoldplus",
       desc: "Pearl yellow colour vegi capsule with dark brown colour powder, characteristic odour and taste",
       price: 160
     },
     {
-      image: "https://www.patanjaliayurved.net/assets/product_images/400x400/1739512839YouvanGoldPlusTwoCaphomeimagenew.webp",
+      image: "https://www.patanjaliayurved.net/assets/product_images/400x400/1739508861womensuperfoodhome.png",
       title: "Yuvan Gold Plus",
+      slug: "yuvangoldplus",
       desc: "Pearl yellow colour vegi capsule with dark brown colour powder, characteristic odour and taste",
       price: 160
     },
     {
-      image: "https://www.patanjaliayurved.net/assets/product_images/400x400/1739512839YouvanGoldPlusTwoCaphomeimagenew.webp",
+      image: "https://www.patanjaliayurved.net/assets/product_images/400x400/1739940211orthogrithomeimage.webp",
       title: "Yuvan Gold Plus",
+      slug: "yuvangoldplus",
       desc: "Pearl yellow colour vegi capsule with dark brown colour powder, characteristic odour and taste",
       price: 160
     },
     {
-      image: "https://www.patanjaliayurved.net/assets/product_images/400x400/1739512839YouvanGoldPlusTwoCaphomeimagenew.webp",
+      image: "https://www.patanjaliayurved.net/assets/product_images/400x400/1740046788aloeverajuicewithfibre.webp",
       title: "Yuvan Gold Plus",
+      slug: "yuvangoldplus",
       desc: "Pearl yellow colour vegi capsule with dark brown colour powder, characteristic odour and taste",
       price: 160
     },
     {
-      image: "https://www.patanjaliayurved.net/assets/product_images/400x400/1739512839YouvanGoldPlusTwoCaphomeimagenew.webp",
+      image: "https://www.patanjaliayurved.net/assets/product_images/400x400/1739963227madhugrit.webp",
       title: "Yuvan Gold Plus",
+      slug: "yuvangoldplus",
       desc: "Pearl yellow colour vegi capsule with dark brown colour powder, characteristic odour and taste",
       price: 160
     },
-    {
-      image: "https://www.patanjaliayurved.net/assets/product_images/400x400/1739512839YouvanGoldPlusTwoCaphomeimagenew.webp",
-      title: "Yuvan Gold Plus",
-      desc: "Pearl yellow colour vegi capsule with dark brown colour powder, characteristic odour and taste",
-      price: 160
-    },
-
   ]
+
   return (
     <>
       {/* Banner Section */}
@@ -157,7 +158,6 @@ export default function Home() {
       </div>
       {/* Offer Banner */}
       <div className="flex m-8 space-x-2">
-
         <Image
           src="https://www.patanjaliayurved.net/media/images/new-user-A.webp"
           alt="Image 3"
@@ -180,9 +180,9 @@ export default function Home() {
           {featuredProduct.map((item, index) => (
 
             <div className="w-56 p-3 mx-4 my-8 bg-white rounded shadow-2xl" key={index}>
-              <a className="relative h-48 rounded overflow-hidden">
+              <Link href={`product/${item.slug}`} className="relative h-48 rounded overflow-hidden">
                 <Image alt="ecommerce" width={200} height={200} className="object-cover object-center shadow-2xs" src={item.image} />
-              </a>
+              </Link>
               <div className="mt-4">
                 <p className="border border-green-500 rounded inline px-2 bg-green-200 text-black">Featured</p>
                 <h2 className="text-gray-900 title-font text-lg font-medium">{item.title}</h2>
@@ -217,7 +217,6 @@ export default function Home() {
             height={300}
             className="object-cover rounded-md"
           />
-            
             </div>
             <div>
           <Image
@@ -238,9 +237,9 @@ export default function Home() {
           {featuredProduct.map((item, index) => (
 
             <div className="w-56 p-3 mx-4 my-8 bg-white rounded shadow-2xl" key={index}>
-              <a className="relative h-48 rounded overflow-hidden">
+              <Link href={`product/${item.slug}`} className="relative h-48 rounded overflow-hidden">
                 <Image alt="ecommerce" width={200} height={200} className="object-cover object-center shadow-2xs" src={item.image} />
-              </a>
+              </Link>
               <div className="mt-4">
                 <p className="border border-green-500 rounded inline px-2 bg-green-200 text-black">Featured</p>
                 <h2 className="text-gray-900 title-font text-lg font-medium">{item.title}</h2>

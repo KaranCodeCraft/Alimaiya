@@ -1,7 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
     images:{
-        domains:['www.patanjaliayurved.net']
+        domains:['www.patanjaliayurved.net','www.dummyimage.com']
     }
 };
 

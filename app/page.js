@@ -157,25 +157,27 @@ export default function Home() {
         </Marquee>
       </div>
       {/* Offer Banner */}
-      <div className="flex m-8 space-x-2">
-        <Image
-          src="https://www.patanjaliayurved.net/media/images/new-user-A.webp"
-          alt="Image 3"
-          width={1920}
-          height={300}
-          className="object-cover rounded-md"
-        />
-        <Image
-          src="https://www.patanjaliayurved.net/media/images/buy-medi.webp"
-          alt="Image 3"
-          width={1920}
-          height={300}
-          className="object-cover rounded-md"
-        />
-      </div>
+      <section className="container">
+        <div className="flex flex-col md:flex-row m-2 gap-4">
+          <Image
+            src="https://www.patanjaliayurved.net/media/images/new-user-A.webp"
+            alt="Image 3"
+            width={1920}
+            height={400}
+            className="object-cover rounded-md"
+          />
+          <Image
+            src="https://www.patanjaliayurved.net/media/images/buy-medi.webp"
+            alt="Image 3"
+            width={1920}
+            height={400}
+            className="object-cover rounded-md"
+          />
+        </div>
+      </section>
       {/* Featured Products */}
       <section className="text-gray-600 body-font border bg-green-100">
-        <h1 className="px-16 pt-4 text-black text-3xl font-bold">Featured Products</h1>
+        <h1 className="px-16 pt-4 text-black text-3xl font-bold text-center md:text-left">Featured Products</h1>
         <Marquee pauseOnHover={true} speed={20}>
           {featuredProduct.map((item, index) => (
 
@@ -196,43 +198,41 @@ export default function Home() {
 
       {/* Offer Banner */}
       <section>
-        <h1 className="text-2xl font-bold mt-4 pl-8">Daily & Seasonal Products</h1>
-        <div className="flex m-8 space-x-2">
+        <h1 className="text-2xl font-bold mt-4 pl-8 text-center md:text-left">Seasonal Offers</h1>
+        <div className="flex flex-col md:flex-row m-4 gap-4">
           <div>
-
-          <Image
-            src="https://www.patanjaliayurved.net/assets/home_slider/1737889498cleaning.webp"
-            alt="Image 3"
-            width={1920}
-            height={300}
-            className="object-cover rounded-md"
+            <Image
+              src="https://www.patanjaliayurved.net/assets/home_slider/1737889498cleaning.webp"
+              alt="Image 3"
+              width={1920}
+              height={300}
+              className="object-cover rounded-md"
             />
-            </div>
-            <div>
-            
-          <Image
-            src="https://www.patanjaliayurved.net/assets/home_slider/1738124342nutrelaA.webp"
-            alt="Image 3"
-            width={1920}
-            height={300}
-            className="object-cover rounded-md"
-          />
-            </div>
-            <div>
-          <Image
-            src="https://www.patanjaliayurved.net/assets/home_slider/1737889479winter.webp"
-            alt="Image 3"
-            width={1920}
-            height={300}
-            className="object-cover rounded-md"
-          />
+          </div>
+          <div>
+            <Image
+              src="https://www.patanjaliayurved.net/assets/home_slider/1738124342nutrelaA.webp"
+              alt="Image 3"
+              width={1920}
+              height={300}
+              className="object-cover rounded-md"
+            />
+          </div>
+          <div>
+            <Image
+              src="https://www.patanjaliayurved.net/assets/home_slider/1737889479winter.webp"
+              alt="Image 3"
+              width={1920}
+              height={300}
+              className="object-cover rounded-md"
+            />
           </div>
         </div>
       </section>
 
       {/* Festival Highlight */}
       <section className="text-gray-600 body-font border bg-green-100">
-        <h1 className="px-16 pt-4 text-black text-3xl font-bold">Daily & Seasonal Products</h1>
+        <h1 className="px-16 pt-4 text-black text-3xl font-bold text-center md:text-left">Daily & Seasonal Products</h1>
         <Marquee>
           {featuredProduct.map((item, index) => (
 

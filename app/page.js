@@ -19,6 +19,10 @@ export default function Home() {
       img: "https://www.patanjaliayurved.net/media/images/health-care.webp",
     },
     {
+      title: "Health Care",
+      img: "https://www.patanjaliayurved.net/media/images/health-care.webp",
+    },
+    {
       title: "Personal Care",
       img: "https://www.patanjaliayurved.net/media/images/personal-care.webp",
     },
@@ -71,6 +75,20 @@ export default function Home() {
     },
     {
       image: "https://www.patanjaliayurved.net/assets/product_images/400x400/1740046788aloeverajuicewithfibre.webp",
+      title: "Yuvan Gold Plus",
+      slug: "yuvangoldplus",
+      desc: "Pearl yellow colour vegi capsule with dark brown colour powder, characteristic odour and taste",
+      price: 160
+    },
+    {
+      image: "https://www.patanjaliayurved.net/assets/product_images/400x400/1739963227madhugrit.webp",
+      title: "Yuvan Gold Plus",
+      slug: "yuvangoldplus",
+      desc: "Pearl yellow colour vegi capsule with dark brown colour powder, characteristic odour and taste",
+      price: 160
+    },
+    {
+      image: "https://www.patanjaliayurved.net/assets/product_images/400x400/1739963227madhugrit.webp",
       title: "Yuvan Gold Plus",
       slug: "yuvangoldplus",
       desc: "Pearl yellow colour vegi capsule with dark brown colour powder, characteristic odour and taste",
@@ -157,7 +175,7 @@ export default function Home() {
         </Marquee>
       </div>
       {/* Offer Banner */}
-      <section className="container">
+      <section className="container mx-auto">
         <div className="flex flex-col md:flex-row m-2 gap-4">
           <Image
             src="https://www.patanjaliayurved.net/media/images/new-user-A.webp"
